@@ -7,11 +7,11 @@
 }
 
 body, html{
-    background-color: F7F7F7;
+    background-color: #292929;
 }
 
 #logo{
-    width: 5%;
+    width: 8%;
     height: 5%;
     padding: 1%;
 }
@@ -35,8 +35,9 @@ menu > ul > li > a{
     background-color: #454545;
     color: white;
     text-align: center;
-    border-top: 2px solid ;
-    border-radius: 5px;
+    border-right: 4px solid black;
+    border-bottom:  4px solid black;
+    border-radius: 10px;
 }
 
 menu > ul > li > a:hover{
@@ -44,30 +45,52 @@ menu > ul > li > a:hover{
 }
 
 menu > ul > li > a:active{
-    background-color: rgb(255, 111, 140);
+    background-color: crimson;
 }
 
 main{
-    width: 90vw;
-    background-color: aliceblue;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
+    width: 80%;
+    background-color: transparent;
+    margin: 0 auto;
+
 }
 
 strong{
     color: crimson;
 }
 
+.container{
+    display: flex;
+    background-color: rgb(76, 76, 76);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 15px;
+    height: 350px;
+    border-right:  13px solid black;
+    border-bottom:  13px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+}
+
+
+
 article > h2{
-    padding-bottom: 30px;
+    color: aliceblue;
+    background-color: blue;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: 30px;
+    text-shadow: black 0.1em 0.2em 0.5em;
 }
 
 article > p{
-    text-align: justify;
-    margin-bottom: 20px;
-    text-indent: 20px
+    font-size: 20px;
+    background-color: red;
+    margin-bottom: 20%;
+    margin-left: 5%;
+    color: aliceblue;
 }
 
 i#burguer{
@@ -86,5 +109,10 @@ i#burguer:hover{
 }
 i#burguer:active{
     background-color: rgb(255, 111, 140);
+}
+
+.moldura{
+   width: 40%;
+   margin-left: 10px;
 }
 

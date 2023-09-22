@@ -1,0 +1,1208 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Harman';
+    src: url('Harman-Sans.otf') format('opentype');
+}
+
+
+
+
+/* ----------------------------------- Versão de PC e Notebook ------------------------------------------------- */
+@media (min-width: 768px) {
+/* --------------------------------- Menu e Header ------------------------------------------------------------ */
+body{
+    background-color: #051923;
+}
+
+h1{
+    color: #00A6FB;
+    background-color: aliceblue;
+    display: inline-block;  
+}
+#logo{
+    width: 12%;
+    height: 20%;
+    margin-left: 10px;
+}
+
+.wppButton{
+    height: ;
+    width: 50%;
+    background-color: #68bd6d;
+    border: solid 2px aliceblue;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    flex-wrap: wrap;
+}
+
+.wppButton a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 150%;
+    margin-left: 2%;
+    font-family: 'Harman', sans-serif;
+}
+
+
+.wpp-logo{
+    width: 20%;
+    margin-left: 7px;
+}
+
+.container-botoes{
+    background-color: transparent;
+    display:flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-right: 10px;
+
+}
+
+.nav-button{
+    border: solid aliceblue 2px; 
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #00A6FB;
+    cursor: pointer;    
+    height: 80%;
+}
+
+.nav-button i {
+    color:aliceblue
+}
+
+.container-header{
+    background-color:;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 1%;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: #003554;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #00A6FB;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    display: block;
+    font-size: 35px;
+    transition: 0.3s;
+    font-family: 'Harman', sans-serif;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: white;
+}
+
+.overlay .closeButton{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#apresentacaoTexto{
+    background-color: transparent;
+    color:#00A6FB;
+    font-size: 10vh;
+    font-family: 'Harman', sans-serif;
+    margin-top: 3%;
+    margin-left: 9%;
+    margin-right: 9%;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    -webkit-text-fill-color: #00A6FB;
+    -webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+.container-inicio{
+    background-color: #0582CA;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+
+.container-inicio p{
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 6%;
+    margin-right: 10px;
+    font-size: 23;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+.container-inicio article h1{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 4px;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    font-size: 35;
+    font-family: "Harman", sans-serif; 
+}
+/* --------------------------------- Serviços ------------------------------------------------------------ */
+
+.servicosTitulo{
+    display: flex;
+    margin: auto;
+    color:aliceblue;
+    background-color: #003554;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Harman",sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    -webkit-text-fill-color: #00A6FB;
+    -webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+.container-faixa{
+    background-color: #003554;
+    margin-top: 2%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#prancheta{
+    color: aliceblue;
+    font-size: 80px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+#color-grading{
+    display: flex;
+    background-color: transparent;
+    flex-wrap: wrap;
+    width: 7%;
+}
+
+#color-grading p{
+    color: aliceblue;
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+}
+
+#cortes{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+}
+
+#corte-faixa{
+    color: aliceblue;
+    font-size: 70px;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin: auto;
+}
+
+#cortes p{
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+}
+
+#audio{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 7%;
+}
+
+#audio-faixa{
+    color: aliceblue;
+    font-size: 80px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+#audio p{
+    color: aliceblue;
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+}
+
+#efeitos{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 18%;
+}
+
+#efeitos-faixa{
+    color: aliceblue;
+    font-size: 70px;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin: auto;
+}
+
+#efeitos p{
+    color: aliceblue;
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+}
+
+#qualidade{
+    background-color:transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+}
+
+#qualidade-faixa{
+    color: aliceblue;
+    font-size: 70px;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin: auto;
+}
+
+#qualidade p{
+    color: aliceblue;
+    font-size: 19px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+}
+
+.container-cortes{
+    background-color: #003554;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 2%;
+}
+
+.container-cortes2{
+    background-color: #003554;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 60%;
+    margin-left: 37%;
+    margin-top: 2%;
+}
+
+.container-cortes article h1{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-shadow: black 0.2em 0.2em 0.2em; 
+    font-size: 35;
+    font-family: "Harman", sans-serif;
+}
+
+.container-cortes2 article h1{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-shadow: black 0.2em 0.2em 0.2em; 
+    font-size: 35;
+    font-family: "Harman", sans-serif;
+}
+
+.container-cortes p{
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 6%;
+    font-size: 18;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+} 
+
+.container-cortes2 p{
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 6%;
+    font-size: 18;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container-cortes img{
+    width: 25%;  
+}
+.container-cortes2 img{
+    width: 25%;
+}
+
+
+.fundoPC{
+    background-image:url(images/fundo\ cidade\ azul.jpg);
+    background-size: 100%;
+    padding-bottom: 5%;
+    padding-top: 2.5px;
+}
+
+#fundoPC-2{
+    background-image: url(images/fundo\ cidade.jpg);
+    padding-top: 20px;
+    padding-bottom: 4%;
+    background-size: 100%;
+}
+
+/* -------------------------------------------------- Clientes --------------------------------------------------*/
+
+.clientesFundo{
+    background-image: url(images/fundo\ clientes.png);
+    background-size: 100%;
+    padding-bottom: 10%;
+}
+
+
+.clientesSecao{
+    display: flex;
+    margin: auto;
+    color:aliceblue;
+    background-color: #003554;
+    align-items: center;
+    margin-top: 0;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Harman",sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    -webkit-text-fill-color: #00A6FB;
+    -webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+
+.container-faixa{
+    background-color: #003554;
+    margin-top: 2%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.container-clientes{
+    background-color: #003554;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.container-clientes article h1{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-shadow: black 0.2em 0.2em 0.2em; 
+    font-size: 35;
+    font-family: "Harman", sans-serif;
+}
+
+.container-clientes p{
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 3%;
+    font-size: 21;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container-clientes article img{
+    width: 20%;
+    margin-left: 35%;
+}
+
+/* ------------------------------------------ Contato --------------------------------------------------------- */
+
+.contatoSecao{
+    background-image: url(images/contatoFundo.jpg);
+    background-size: 100%;
+    padding-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+
+.contatoTitulo{
+    display: flex;
+    margin: auto;
+    color:aliceblue;
+    background-color: #003554;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Harman",sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    -webkit-text-fill-color: #00A6FB;
+    -webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+.listas-container{
+    margin-top: 10%;
+}
+
+.listas-container a{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-shadow: black 0.2em 0.2em 0.2em; 
+    font-size: 35;
+    font-family: "Harman", sans-serif;
+    text-decoration: none;
+    margin: auto;
+}
+
+#botaoWpp{
+    background-color: #68bd6d;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 4%;
+    height: 10%;
+}
+
+#container-wpp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-wpp img{
+    background-color: transparent;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+
+#botaoInsta{
+    background-color: hotpink;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 4%;
+    height: 10%;
+}
+
+#botaoEmail{
+    background-color: #00A6FB;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 4%;
+    height: 10%;
+}
+
+#botaoYT{
+    background-color: crimson;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 4%;
+    height: 10%;
+}
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------- Versão Celular --------------------------------------------------  */
+@media (min-width: 320px) and (max-width: 767px){
+
+/* -------------------------------------------- Menu e Header --------------------------------------------- */
+body{
+    background-color: #051923;
+}
+
+h1{
+    color: #00A6FB;
+    background-color: aliceblue;
+    display: inline-block;  
+}
+
+#logo{
+    width: 18%;
+    height: 20%;
+    margin-left: 10px;
+}
+
+.wppButton{
+    width: 50%;
+    background-color: #68bd6d;
+    border: solid 2px aliceblue;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    
+}
+
+.wppButton a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 150%;
+    margin-left: 2%;
+    font-family: 'Harman', sans-serif;
+}
+
+
+.wpp-logo{
+    width: 20%;
+    margin-left: 7px;
+}
+
+.container-botoes{
+    background-color: transparent;
+    display:flex;
+    justify-content: space-between;
+    width: 55%;
+    margin-right: 10px;
+
+}
+
+.nav-button{
+    border: solid aliceblue 2px; 
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #00A6FB;
+    cursor: pointer;    
+    height: 80%;
+}
+
+.nav-button i {
+    color:aliceblue
+}
+
+.container-header{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 1%;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    background-color: #003554;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    color: #00A6FB;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    display: block;
+    font-size: 35px;
+    transition: 0.3s;
+    font-family: 'Harman', sans-serif;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: white;
+}
+
+.overlay .closeButton{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#apresentacaoTexto{
+    background-color: transparent;
+    color:#00A6FB;
+    font-size: 7vh;
+    font-family: 'Harman', sans-serif;
+    margin-top: 3%;
+    margin-left: 9%;
+    margin-right: 9%;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    -webkit-text-fill-color: #00A6FB;
+    -webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+.container-inicio{
+    background-color: #0582CA;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 80%;
+    height: 33%;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+
+.container-inicio p{
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 6%;
+    margin-right: 10px;
+    font-size: 15;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+.container-inicio article h1{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 4px;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    font-size: 25;
+    font-family: "Harman", sans-serif; 
+}
+/* --------------------------------- Serviços ------------------------------------------------------------ */
+
+.servicosTitulo{
+    display: flex;
+    margin: auto;
+    color:aliceblue;
+    background-color: #003554;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: "Harman",sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    -webkit-text-fill-color: #00A6FB;
+    -webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+.container-faixa{
+    background-color: #003554;
+    margin-top: 2%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+#prancheta{
+    color: aliceblue;
+    font-size: 60px;
+    margin-left: 10%;
+    margin-top: 1%;
+    overflow-y: hidden;
+    margin: auto;
+}
+
+#color-grading{
+    display: flex;
+    background-color: transparent;
+    flex-wrap: wrap;
+    width: 15%;
+    overflow-y: hidden;
+}
+
+#color-grading p{
+    color: aliceblue;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+    overflow-y: hidden;
+}
+
+#cortes{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    overflow-y: hidden;
+}
+
+#corte-faixa{
+    color: aliceblue;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+#cortes p{
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+    overflow-y: hidden;
+}
+
+#audio{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    overflow-y: hidden;
+}
+
+#audio-faixa{
+    color: aliceblue;
+    font-size: 60px;
+    margin-left: 10%;
+    margin-top: 1%;
+    overflow-y: hidden;
+    margin: auto;
+}
+
+#audio p{
+    color: aliceblue;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+    overflow-y: hidden;
+}
+
+#efeitos{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    overflow-y: hidden;
+}
+
+#efeitos-faixa{
+    color: aliceblue;
+    font-size: 60px;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+#efeitos p{
+    color: aliceblue;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+    overflow-y: hidden;
+}
+
+#qualidade{
+    background-color:transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 15%;
+    overflow-y: hidden;
+}
+
+#qualidade-faixa{
+    color: aliceblue;
+    font-size: 60px;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+#qualidade p{
+    color: aliceblue;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Harman', sans-serif;
+    overflow-y: hidden;
+}
+
+.container-cortes{
+    background-color: #003554;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 80%;
+    height: 25%;
+    margin-left: 20px;
+    margin-top: 2%;
+}
+
+.container-cortes2{
+    background-color: #003554;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 80%;
+    height: 25%;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+.container-cortes article h1{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-shadow: black 0.2em 0.2em 0.2em; 
+    font-size: 20;
+    font-family: "Harman", sans-serif;
+}
+
+.container-cortes2 article h1{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-shadow: black 0.2em 0.2em 0.2em; 
+    font-size: 20;
+    font-family: "Harman", sans-serif;
+}
+
+.container-cortes p{
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 6%;
+    font-size: 15;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+} 
+
+.container-cortes2 p{
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 6%;
+    font-size: 15;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container-cortes img{
+    width: 140%;  
+}
+.container-cortes2 img{
+    width: 140%;
+}
+
+
+.fundoPC{
+    background-image:url(images/fundo\ cidade\ azul.jpg);
+    background-size: 148%;
+    padding-bottom: 5%;
+    padding-top: 2.5px;
+}
+
+#fundoPC-2{
+    background-image: url(images/fundo\ cidade.jpg);
+    padding-top: 20px;
+    padding-bottom: 4%;
+    background-size: 300%;
+}
+
+/* -------------------------------------------------- Clientes --------------------------------------------------*/
+
+.clientesFundo{
+    background-image: url(images/fundo\ clientes.png);
+    background-size: 190%;
+    padding-bottom: 10%;
+}
+
+
+.clientesSecao{
+    display: flex;
+    margin: auto;
+    color:aliceblue;
+    background-color: #003554;
+    align-items: center;
+    margin-top: 0;
+    justify-content: center;
+    font-size: 32px;
+    font-family: "Harman",sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    -webkit-text-fill-color: #00A6FB;
+    -webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+
+.container-faixa{
+    background-color: #003554;
+    margin-top: 2%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.container-clientes{
+    background-color: #003554;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 80%;
+    height: 25%;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.container-clientes article h1{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-shadow: black 0.2em 0.2em 0.2em; 
+    font-size: 20;
+    font-family: "Harman", sans-serif;
+}
+
+.container-clientes p{
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 3%;
+    font-size: 13;
+    color: aliceblue;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container-clientes article img{
+    width: 40%;
+    margin-left: 35%;
+}
+
+/* ------------------------------------------ Contato --------------------------------------------------------- */
+
+.contatoSecao{
+    background-image: url(images/contatoFundo.jpg);
+    background-size: 260%;
+    padding-bottom: 10%;
+    background-repeat: no-repeat;
+}
+
+
+.contatoTitulo{
+    display: flex;
+    margin: auto;
+    color:aliceblue;
+    background-color: #003554;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-family: "Harman",sans-serif;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    -webkit-text-fill-color: #00A6FB;
+    -webkit-text-stroke-width: 0.001em;
+    -webkit-text-stroke-color: aliceblue;
+}
+
+.listas-container{
+    margin-top: 10%;
+}
+
+.listas-container a{
+    color: aliceblue;
+    background-color: transparent;
+    display: flex;
+    margin-left: 20px;
+    margin-top: 4px;
+    text-shadow: black 0.2em 0.2em 0.2em; 
+    font-size: 23;
+    font-family: "Harman", sans-serif;
+    text-decoration: none;
+    margin: auto;
+}
+
+#botaoWpp{
+    background-color: #68bd6d;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 4%;
+    height: 10%;
+}
+
+#container-wpp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9%;
+}
+
+#container-wpp img{
+    background-color: transparent;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+#botaoInsta{
+    background-color: hotpink;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 4%;
+    height: 10%;
+}
+
+#botaoEmail{
+    background-color: #00A6FB;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 4%;
+    height: 10%;
+}
+
+#botaoYT{
+    background-color: crimson;
+    border-radius: 5px;
+    border-right: black 12px solid;
+    border-bottom: black 10px solid;
+    border-top: black 4px solid;
+    border-left: black 4px solid;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    margin-right: 28%;
+    margin-top: 4%;
+    height: 10%;
+}
+}

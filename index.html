@@ -1,53 +1,258 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos-mobile/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="media-query/style.css">
-    <link rel="icon" href="images/favicon-32x32.png">
-    <title>Delgado Edição</title>
-</head>
-<body onresize="mudouTamanho()">
+<html lang="pt-br">
 
-    <header>
-        <img id="logo" src="images/logo cinza.png" alt="">
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-        <menu  id="itens">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </menu>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
+  <!-- Icones do Google -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <title>Delgado Edição</title>
+</head>
+
+<body>
+  <div class="fundoPC">
+    <div id="INICIO" class="container-header">
+      <img id="logo" src="images/delgado logo.png"></img>
+      <!---------------------------------------- Menu e Header --------------------------------------------------->
+
+      <div class="container-botoes">
+        <button class="wppButton">
+          <img class="wpp-logo" src="images/logo whatsapp png.png"><a href=""><a href="" class="texto-botao">CONTATO</a>
+        </button>
+
+
+
+        <div id="myNav" class="overlay">
+          <a href="javascript: void(0)" class="closeButton" onclick="closeNav()">&times;</a>
+
+          <div class="overlay-content">
+            <a href="#INICIO">Início</a>
+            <a href="#SERVICOS">Serviços</a>
+            <a href="#CLIENTES">Clientes</a>
+            <a href="#CONTATO">Contato</a>
+          </div>
+
+
+        </div>
+
+        <button class="nav-button" onclick="openNav()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+      </div>
+    </div>
 
     <main>
-        <div class="container">
-            <article>
-                <h2 id="titulo1">Muito mais <strong>qualidade</strong> para os seus vídeos!</h2>
-                <p>Sempre trazendo o melhor em edição de vídeo, correção de cores, criação de vinhetas e muito mais para o seu projeto audiovisual.</p>
-                
-            </article>
 
-            <img class="moldura" src="images/moldura.png" alt="">
-        </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </main>
-    
-<script src="script.js"></script>
+      <!---------------------------------------- Apresentação --------------------------------------------------->
+      <h1 id="apresentacaoTexto">Seus vídeos em um novo patamar!</h1>
+
+      <div class="container-inicio">
+        <article>
+          <h1>Qualidade no seu conteúdo</h1>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Deserunt possimus aperiam laborum placeat fugit cupiditate numquam, dolores architecto earum enim at,
+            .</p>
+        </article>
+
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/JZ7-AHdnpqo" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+
+      </div>
+  </div>
+
+  <!-- ------------------------ Faixa Central de Processos da Edição de Vídeo --------------------------------->
+  <h1 id="SERVICOS" class="servicosTitulo">Serviços</h1>
+
+  <div class="container-faixa">
+
+    <div id="cortes">
+      <span id="corte-faixa" class="material-symbols-outlined">content_cut</span>
+      <p>Cortes e Montagem do vídeo</p>
+    </div>
+
+    <div id="audio">
+      <span id="audio-faixa" class="material-symbols-outlined">volume_up</span>
+      <p>Ajustes de aúdio</p>
+    </div>
+
+    <div id="color-grading">
+      <span id="prancheta" class="material-symbols-outlined">palette</span>
+      <p>Color Grading</p>
+    </div>
+
+    <div id="efeitos">
+      <span id="efeitos-faixa" class="material-symbols-outlined">face_retouching_natural</span>
+      <p>Efeitos, Trilhas sonoras, Vinhetas e muito mais</p>
+    </div>
+
+    <div id="qualidade">
+      <span id="qualidade-faixa" class="material-symbols-outlined">hd</span>
+      <p>Exportação em Qualidade Máxima</p>
+    </div>
+  </div>
+
+  <section id="fundoPC-2">
+    <!-- parte 1 -->
+    <div class="container-cortes">
+
+      <article>
+        <h1>Qualidade no seu conteúdo</h1>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Deserunt possimus aperiam laborum placeat fugit cupiditate numquam, dolores architecto earum enim at</p>
+      </article>
+
+      <img src="images/blog fundo redondo.png" alt="">
+    </div>
+
+
+    <!-- parte 2 -->
+    <div class="container-cortes2">
+
+      <img src="images/podcast fundo redondo.png" alt="">
+
+      <article>
+        <h1 id="titulo2">Qualidade no seu conteúdo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Deserunt possimus aperiam laborum placeat fugit cupiditate numquam, dolores architecto earum enim at</p>
+      </article>
+
+    </div>
+
+    <div class="container-cortes">
+
+      <article>
+        <h1>Qualidade no seu conteúdo</h1>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Deserunt possimus aperiam laborum placeat fugit cupiditate numquam, dolores architecto earum enim at</p>
+      </article>
+
+      <img src="images/games fundo redondo.png" alt="">
+    </div>
+
+  </section>
+
+  <!------------------------------------------------- Clientes ------------------------------------------------->
+
+  <section class="clientesFundo">
+    <h1 id="CLIENTES" class="clientesSecao">Clientes</h1>
+
+    <!-- Cliente 1 -->
+    <div class="container-clientes">
+
+      <img src="images/gamehouse logo.jpg" alt="" width="400%">
+
+      <article>
+        <h1>Canal Game House</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Eius aut blanditiis maxime dicta sequi quo, culpa
+          autem dolores facilis quibusdam vitae veritatis architecto, voluptatem ev</p>
+        <img src="images/estrelas.png" alt="">
+      </article>
+
+    </div>
+
+    <!-- Cliente 2 -->
+    <div class="container-clientes">
+
+      <img src="images/GRANPETS LOGO.png" alt="" width="400%" style="background-color: bisque;">
+
+      <article>
+        <h1>Granpets Pet Shop</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Eius aut blanditiis maxime dicta sequi quo, culpa
+          autem dolores facilis quibusdam vitae veritatis architecto, voluptatem ev</p>
+        <img src="images/estrelas.png" alt="">
+      </article>
+
+    </div>
+
+
+  </section>
+
+  <section id="CONTATO" class="contatoSecao">
+
+    <h1 id="contatoTitulo" class="contatoTitulo">Contato</h1>
+
+    <div class="listas-container">
+
+
+      <div id="container-wpp"><img src="images/logo whatsapp png.png" alt="" width="10%">
+        <div id="botaoWpp"><a href="">Whatsapp</a></div>
+      </div>
+
+      <div id="container-wpp"><img src="images/instagram logo.png" alt="" width="10.5%">
+        <div id="botaoInsta"><a href="">Instagram</a></div>
+      </div>
+
+      <div id="container-wpp"><img src="images/email logo.png" alt="" width="10.5%">
+        <div id="botaoEmail"><a href="">Email</a></div>
+      </div>
+
+
+      <div id="container-wpp"><img src="images/youtube logo.png" alt="" width="10.5%">
+        <div id="botaoYT"><a href="">Youtube</a></div>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
 </body>
+
 </html>
